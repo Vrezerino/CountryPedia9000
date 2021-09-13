@@ -1,0 +1,76 @@
+@keyframes spin { 
+	100% { 
+			-webkit-transform: rotate(360deg); 
+			transform:rotate(360deg); 
+	} 
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	display: flex;
+  justify-content: center;
+	margin: 0px;
+}
+
+a {
+	color:rgb(46, 92, 0);
+}
+
+h1 {
+	margin: 2px 0px 4px 0px
+}
+
+img.globe, img.ladybug{
+  vertical-align: middle;
+}
+
+img.globe {
+	height: 50px;
+}
+
+img.ladybug {
+	margin: 0px 0px 0px 4px;
+	-webkit-animation: spin 4s linear infinite;
+	-moz-animation: spin 4s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+button.showCountry {
+	background-color: rgb(191, 235, 204);
+	padding: 0px 2px 0px 2px;
+	margin: 0px 0px 0px 4px;
+}
+
+div.container {
+	width: 400px;
+}
+
+div.startSearching {
+	text-align: center;
+}
+
+div.results {
+	width: inherit;
+}
+
+table.controls {
+	width: 100%;
+}
+
+table td.centered {
+	text-align: center;
+}
+
+hr {
+	border-color: rgb(0, 219, 0);
+}
+
+div.author {
+	text-align: center;
+	font-size: x-small;
+	margin: 0px 0px 40px 0px;
+}
