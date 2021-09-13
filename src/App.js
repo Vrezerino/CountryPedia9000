@@ -57,7 +57,7 @@ const App = () => {
 			</div>
 			<hr />
 			<div className='author'>
-				© 2021
+				© 2021&nbsp;
 				<a target='_blank'
 					rel='noreferrer'
 					href='https://github.com/Vrezerino'>
