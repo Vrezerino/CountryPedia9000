@@ -12,6 +12,7 @@
 /build
 
 # misc
+.eslintrc.js
 .DS_Store
 .env.local
 .env.development.local
