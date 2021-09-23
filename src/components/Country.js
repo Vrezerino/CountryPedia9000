@@ -23,7 +23,7 @@ const Country = ({ results, setResults, setErrorMsg }) => {
 						{results[0].name}
 					</h1>
 
-					<img border="1" alt={alt} src={`/data/flags/${results[0].alpha3Code.toLowerCase()}.png`} width="222" /><br />
+					<img border="1" alt={alt} src={`/flags/${results[0].alpha3Code.toLowerCase()}.png`} width="222" /><br />
 
 					<ul>
 						<b>{results[0].altSpellings.map((name) => <li key={name}>{name}</li>)}</b>
