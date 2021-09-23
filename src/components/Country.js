@@ -30,7 +30,7 @@ const Country = ({ results, setResults, setErrorMsg }) => {
 					</ul>
 
 					<b>Demonym</b>: {results[0].demonym}<br />
-					<b>Region</b>: {results[0].subregion}<br />
+					<b>Region</b>: {results[0].region}<br />
 					<b>Capital</b>: {results[0].capital}<br />
 					<b>Population</b>: {population}<br />
 					<b>Area</b>: {area} km<sup>2</sup><br />
