@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import countryService from './services/countryService'
 import FilterForm from './components/FilterForm'
 import Country from './components/Country'
 import Notification from './components/Notification'
 import './App.css'
+import countriesJSON from './data/countries.json'
 
 const App = () => {
 	const [countries, setCountries] = useState([])
@@ -11,12 +11,8 @@ const App = () => {
 	const [errorMessage, setErrorMessage] = useState(null)
 
 	useEffect(() => {
-		const fetchCountries = async () => {
-			const countries = await countryService.getCountries()
-			setCountries(countries)
-		}
 		try {
-			fetchCountries()
+			setCountries(countriesJSON)
 		} catch (e) {
 			setErrorMessage('Error')
 		} setTimeout(() => {
